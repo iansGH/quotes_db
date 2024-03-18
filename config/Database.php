@@ -4,7 +4,7 @@ class Database{
     //DB Params
     private $conn;
     private $host;
-    private $port;
+    //private $port;
     private $dbname;
     private $username;
     private $password;
@@ -14,7 +14,7 @@ class Database{
         $this->password = getenv('PASSWORD');
         $this->dbname = getenv('DBNAME');
         $this->host = getenv('HOST');
-        $this->port = getenv('PORT');
+        //$this->port = getenv('PORT');
     }
 
     //DB Connect
