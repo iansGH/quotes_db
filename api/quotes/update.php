@@ -16,7 +16,9 @@ if($quote->update()){
     );
 
     //make json
-    echo (json_encode($quote_arr));
+    echo json_encode($quote);
+    return (json_encode($quote_arr));
+
 }else{
     echo json_encode(
         array('message' => 'Quote Not Updated')
