@@ -31,10 +31,10 @@ if($num>0){
         extract($row);
 
         $quote_item = array(
-            'ID' => $id,
-            'Quote' => html_entity_decode($quote),
-            'Author' => $author_id,
-            'Category' => $category_id
+            'id' => $id,
+            'quote' => html_entity_decode($quote),
+            'author' => $author_id,
+            'category' => $category_id
         );
 
         //push to 'data'
@@ -47,7 +47,7 @@ if($num>0){
 }else{
     //no quotes
     echo json_encode(
-        array("message: 'No Quotes Found'")
+        array("message:" => 'No Quotes Found')
     );
 
 }

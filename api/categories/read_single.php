@@ -26,7 +26,7 @@ if(isset($category->category)){
 else{
     //no single category
     echo json_encode(
-        array("message: 'category_id Not Found'")
+        array('message'=> 'category_id Not Found')
     );
 } 
 

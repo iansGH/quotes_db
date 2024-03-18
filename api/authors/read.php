@@ -24,8 +24,8 @@ if($num>0){
         extract($row);
 
         $author_item = array(
-            'ID' => $id,
-            'Author' => $author
+            'id' => $id,
+            'author' => $author
         );
 
         //push to 'data'
@@ -38,7 +38,7 @@ if($num>0){
 }else{
     //no authors
     echo json_encode(
-        array('message => "No Authors Found')
+        array('message'=> 'author_id Not Found')
     );
 
 }

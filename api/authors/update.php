@@ -7,8 +7,8 @@
     if($author->update()) {
 
         $author_arr = array(
-            'ID' => $author->id,
-            'Author' => $author->author,
+            'id' => $author->id,
+            'author' => $author->author,
         );
 
         //make json

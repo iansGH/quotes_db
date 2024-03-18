@@ -24,8 +24,8 @@ if($num>0){
         extract($row);
 
         $cat_item = array(
-            'ID' => $id,
-            'Category' => $category
+            'id' => $id,
+            'category' => $category
         );
 
         //push to 'data'
@@ -38,7 +38,7 @@ if($num>0){
 }else{
     //no categories
     echo json_encode(
-        array('message => "No Categories Found')
+        array('message' => 'No Categories Found')
     );
 
 }
