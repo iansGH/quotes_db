@@ -26,7 +26,7 @@ if(isset($author->author)){
 else{
     //no single author
     echo json_encode(
-        array("message: 'author_id Not Found'")
+        array('message'=> 'author_id Not Found')
     );
 } 
 
