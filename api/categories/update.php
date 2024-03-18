@@ -7,8 +7,8 @@
     if($category->update()) {
 
         $category_arr = array(
-            'ID' => $category->id,
-            'Category' => $category->category,
+            'id' => $category->id,
+            'category' => $category->category,
         );
 
         //make json

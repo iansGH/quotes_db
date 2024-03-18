@@ -16,7 +16,7 @@
 
     } else {
     echo json_encode(
-        array('message' => 'author not updated')
+        array('message' => 'Author not updated')
     );
     }
 
