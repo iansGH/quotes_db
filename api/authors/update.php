@@ -1,0 +1,26 @@
+<?php
+    // Set ID to UPDATE
+    $author->id = $data->id;
+    $author->author = $data->author;
+
+    // Update Author
+    if($author->update()) {
+
+        $author_arr = array(
+            'ID' => $author->id,
+            'Author' => $author->author,
+        );
+
+        //make json
+        print_r(json_encode($author_arr));
+
+    } else {
+    echo json_encode(
+        array('message' => 'author not updated')
+    );
+    }
+
+//PUT
+//http://localhost/php_rest_quotesdbmysql/api/authors/update.php
+//Headers: Content-Type, application/json
+//Body, raw: { "author": "First Author Updated", "id": "5" }
