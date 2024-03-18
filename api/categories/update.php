@@ -13,7 +13,7 @@
 
         //make json
         //print_r(json_encode($category_arr));
-        echo (json_encode(array($category_arr)));
+        echo (json_encode($category_arr));
 
     } else {
     echo json_encode(

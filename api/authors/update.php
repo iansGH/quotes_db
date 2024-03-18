@@ -13,7 +13,7 @@
 
         //make json
         //print_r(json_encode($author_arr));
-        echo (json_encode(array($author_arr)));
+        echo (json_encode($author_arr));
 
     } else {
     echo json_encode(
