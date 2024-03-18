@@ -26,7 +26,7 @@ if(isset($quote->quote)){
 }
 else{
     //no single quote
-    echo json_encode(array("message:" => 'No Quotes Found'));
+    echo json_encode(array('message' => 'No Quotes Found'));
 } 
 
 
