@@ -11,8 +11,8 @@ if($quote->update()){
     $quote_arr = array(
         'id' => $quote->id,
         'quote' => $quote->quote,
-        'author' => $quote->author_id,
-        'category' => $quote->category_id
+        'author_id' => $quote->author_id,
+        'category_id' => $quote->category_id
     );
 
     //make json
