@@ -6,6 +6,6 @@
     <title>Midterm REST API</title>
 </head>
 <body>
-    
+    <h1>Midterm REST API</h1>
 </body>
 </html>
